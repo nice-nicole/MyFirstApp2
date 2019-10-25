@@ -6,21 +6,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.myfirstapp.MyRestaurantsArrayAdapter;
 import com.example.myfirstapp.R;
+import com.example.myfirstapp.adapters.RestaurantAdapter;
 import com.example.myfirstapp.adapters.RestaurantListAdapter;
-import com.example.myfirstapp.models.YelpBusinessesSearchResponse;
-import com.example.myfirstapp.models.Business;
-import com.example.myfirstapp.models.Category;
+import com.example.myfirstapp.modelss.Business;
+import com.example.myfirstapp.modelss.YelpBusinessesSearchResponse;
 import com.example.myfirstapp.network.YelpApi;
 import com.example.myfirstapp.network.YelpClient;
 
@@ -40,7 +34,7 @@ public class RestaurantsActivity extends AppCompatActivity {
     @BindView(R.id.errorTextView) TextView mErrorTextView;
     @BindView(R.id.progressBar) ProgressBar mProgressBar;
 
-    private RestaurantListAdapter mAdapter;
+    private RestaurantAdapter mAdapter;
 
     public List<Business> restaurants;
 
@@ -64,7 +58,7 @@ public class RestaurantsActivity extends AppCompatActivity {
 
                 if (response.isSuccessful()) {
                     restaurants = response.body().getBusinesses();
-                    mAdapter = new RestaurantListAdapter(RestaurantsActivity.this, restaurants);
+                    mAdapter = new RestaurantAdapter(RestaurantsActivity.this, restaurants);
                     mRecyclerView.setAdapter(mAdapter);
                     RecyclerView.LayoutManager layoutManager =
                             new LinearLayoutManager(RestaurantsActivity.this);

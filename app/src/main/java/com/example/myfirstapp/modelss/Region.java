@@ -1,7 +1,6 @@
 
-package com.example.myfirstapp.models;
+package com.example.myfirstapp.modelss;
 
-import com.example.myfirstapp.models.Center;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -13,7 +12,7 @@ public class Region {
 
     @SerializedName("center")
     @Expose
-    private Center center;
+    public Center center;
 
     /**
      * No args constructor for use in serialization

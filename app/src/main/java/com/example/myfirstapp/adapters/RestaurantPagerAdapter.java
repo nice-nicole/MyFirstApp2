@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.myfirstapp.models.Business;
+import com.example.myfirstapp.modelss.Business;
 import com.example.myfirstapp.ui.RestaurantDetailFragment;
 
 

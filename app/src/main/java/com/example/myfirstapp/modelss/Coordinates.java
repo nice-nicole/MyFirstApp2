@@ -1,5 +1,5 @@
 
-package com.example.myfirstapp.models;
+package com.example.myfirstapp.modelss;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -7,21 +7,20 @@ import com.google.gson.annotations.SerializedName;
 import org.parceler.Parcel;
 
 @Parcel
-
-public class Center {
+public class Coordinates {
 
     @SerializedName("latitude")
     @Expose
-    private Double latitude;
+    public Double latitude;
     @SerializedName("longitude")
     @Expose
-    private Double longitude;
+    public Double longitude;
 
     /**
      * No args constructor for use in serialization
      * 
      */
-    public Center() {
+    public Coordinates() {
     }
 
     /**
@@ -29,7 +28,7 @@ public class Center {
      * @param longitude
      * @param latitude
      */
-    public Center(Double latitude, Double longitude) {
+    public Coordinates(Double latitude, Double longitude) {
         super();
         this.latitude = latitude;
         this.longitude = longitude;

@@ -1,5 +1,5 @@
 
-package com.example.myfirstapp.models;
+package com.example.myfirstapp.modelss;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -12,10 +12,10 @@ public class Category {
 
     @SerializedName("alias")
     @Expose
-    private String alias;
+    public String alias;
     @SerializedName("title")
     @Expose
-    private String title;
+    public String title;
 
     /**
      * No args constructor for use in serialization

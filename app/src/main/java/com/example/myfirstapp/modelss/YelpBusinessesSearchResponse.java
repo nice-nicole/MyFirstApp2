@@ -1,10 +1,7 @@
 
-package com.example.myfirstapp.models;
+package com.example.myfirstapp.modelss;
 
 import java.util.List;
-
-import com.example.myfirstapp.models.Business;
-import com.example.myfirstapp.models.Region;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

@@ -1,14 +1,13 @@
 package com.example.myfirstapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
 import com.example.myfirstapp.R;
 import com.example.myfirstapp.adapters.RestaurantPagerAdapter;
-import com.example.myfirstapp.models.Business;
+import com.example.myfirstapp.modelss.Business;
 
 import org.parceler.Parcels;
 
